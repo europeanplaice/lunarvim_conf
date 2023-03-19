@@ -11,7 +11,7 @@ NVIM_DIR="$HOME/nvim-linux64"
 export PATH="$NVIM_DIR/bin:$HOME/.cargo/bin:$HOME/.local/bin:$PATH"
 
 # Check if the path is already in the PATH variable
-if [[ ":$PATH:" == *":$NVIM_DIR/bin:"* ]]; then
+if [[ ":$PATH:" == *":$NVIM_DIR/bin:\$HOME/.cargo/bin:\$HOME/.local/bin:"* ]]; then
   echo "Path is already in the PATH variable"
 else
   # Add the path to the PATH variable
